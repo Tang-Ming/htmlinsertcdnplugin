@@ -2,7 +2,7 @@
 
 `npm install htmlinsertcdnplugin`
 ## Loading
-`const HtmlWebpackInsertsPlugin = require('./htmlinsertcdnplugin')`
+`const HtmlWebpackInsertsPlugin = require('htmlinsertcdnplugin')`
 
 ## Usage
 
