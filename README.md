@@ -5,10 +5,11 @@
 `const HtmlWebpackInsertsPlugin = require('./htmlinsertcdnplugin')`
 
 ## Usage
-```javascriptlet
+
+```javascript
 /*webpack.config*/
 //cdn file list
-	cdnJs=[
+	let cdnJs=[
       { inject :'head', type:'js', src: '//static.cdn.com/js/html2canvas.min.js' }, 
       { inject :'head', type:'js', src: '//static.cdn.com/js/react-router-dom.min.js' },
       { inject :'head', type:'js', src:  '//static.cdn.com/js/react-dom.production.min.js' },
@@ -19,14 +20,16 @@
 		"react": "React",
 		"react-dom": "ReactDOM",
 		"react-router-dom": "ReactRouterDOM"
-		}:{},
+		}:{}
 	
 	plugins: [
       // Generates an `index.html` file with the <script> injected.
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin(),
 		new HtmlWebpackInsertsPlugin(cdnJs)
-	```
+		]
+```
 ## Result
+
 ```html
 	<!doctype html>
 	<html lang="en">
@@ -38,4 +41,4 @@
 		<script src=//static.cdn.com/js/react-router-dom.min.js></script>
 		<script src=//static.cdn.com/js/html2canvas.min.js></script>
 	</head>
-	```
+```
