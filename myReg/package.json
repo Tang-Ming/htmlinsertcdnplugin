@@ -1,0 +1,23 @@
+{
+  "name": "myreg",
+  "version": "1.0.0",
+  "description": "normal regexp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tang-Ming/myReg.git"
+  },
+  "keywords": [
+    "reg",
+    "rule"
+  ],
+  "author": "tommy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tang-Ming/myReg/issues"
+  },
+  "homepage": "https://github.com/Tang-Ming/myReg#readme"
+}
